@@ -32,7 +32,7 @@ export default {
       'https://pokeapi.co/api/v2/pokemon/bulbasaur'
     )
     const name = pokemonData.species?.name
-    const types = pokemonData?.types.map((type) => type.name)
+    const types = pokemonData?.types.map((type) => type.type.name)
     console.log(name, types)
     return {
       name,
