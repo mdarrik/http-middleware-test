@@ -33,6 +33,7 @@ export default {
     )
     const name = pokemonData.species?.name
     const types = pokemonData?.types.map((type) => type.name)
+    console.log(name, types)
     return {
       name,
       types,
