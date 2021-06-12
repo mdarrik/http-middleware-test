@@ -1,5 +1,10 @@
 # http-middleware-test
 
+This repo is to test the @nuxt/http module's onRequest middleware. It seems to cause nuxt generate to hang forever if you add an onResponse hook. 
+
+If you run this as is, the build never finishes. 
+If you comment out the $http.onRequest function in ~/plugins/http-middleware.server.js, the build should finish. 
+
 ## Build Setup
 
 ```bash
